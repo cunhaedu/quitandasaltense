@@ -5,7 +5,15 @@
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(223.81deg, #E2E474 0%, #81E7A8 100%);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.3)
+  ),
+  url('/cart-bg.jpg');
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 
   h1 {
     color: var(--white);
@@ -64,7 +72,7 @@
   background: none;
   border: none;
   text-align: center;
-  transition: background-color 0.7s;
+  transition: color 0.7s;
 
   &:hover {
     color: rgb(170, 62, 62);
@@ -72,12 +80,12 @@
 }
 
 .cartTotal {
-  margin-top: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between  ;
-  max-width: 100%;
-  min-width: 75%;
+  width: 77%;
 
   span {
     font-weight: 500;
@@ -85,19 +93,35 @@
     font-size: 1.3rem;
   }
 
-  button {
-    background: var(--green-400);
-    border: none;
-    padding: 1rem;
-    border-radius: 1.3rem;
-    transition: background-color 1.2s;
-    text-align: center;
+  div {
+    display: flex;
+    align-items: center;
 
-    text-decoration: none;
-    color: var(--white);
+    a {
+      text-decoration: none;
+      margin-right: 1.5rem;
+      color: var(--gray-500);
+      transition: color 0.7s;
 
-    &:hover {
-      background: var(--green-600);
+      &:hover {
+        color: var(--green-400);
+      }
+    }
+
+    button {
+      background: var(--green-400);
+      border: none;
+      padding: 1rem;
+      border-radius: 1.3rem;
+      transition: background-color 1.2s;
+      text-align: center;
+
+      text-decoration: none;
+      color: var(--white);
+
+      &:hover {
+        background: var(--green-600);
+      }
     }
   }
 }

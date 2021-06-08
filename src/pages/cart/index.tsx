@@ -18,6 +18,25 @@ export default function Cart() {
       </div>
 
       <main className={styles.products}>
+
+        <div className={styles.cartTotal}>
+          <span>
+            Total:
+            {' '}
+            {total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+          </span>
+
+          <div>
+            <Link href="/products">
+              <a type="button">Adicionar mais produtos</a>
+            </Link>
+
+            <Link href="/purchase">
+              <button type="button">Prosseguir com a compra</button>
+            </Link>
+          </div>
+        </div>
+
         <ul>
           {productList.map((product, index) => (
             <li key={product.id}>
@@ -43,18 +62,6 @@ export default function Cart() {
             </li>
           ))}
         </ul>
-
-        <div className={styles.cartTotal}>
-          <span>
-            Total:
-            {' '}
-            {total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-          </span>
-
-          <Link href="/purchase">
-            <button type="button">Prosseguir com a compra</button>
-          </Link>
-        </div>
       </main>
     </div>
   );
