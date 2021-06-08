@@ -1,0 +1,40 @@
+.main {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    border-radius: 0.7rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-weight: 500;
+      font-size: 3rem;
+    }
+
+    span {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 6rem;
+    }
+
+    button {
+      background: var(--green-400);
+      border: none;
+      border-radius: 1.3rem;
+      width: 100%;
+      padding: 1rem 2rem;
+      color: var(--white);
+      transition: background-color 1.2s;
+
+      &:hover {
+        background: var(--green-600);
+      }
+    }
+  }
+}

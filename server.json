@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": "tomate-organico",
+      "title": "Tomate Orgânico",
+      "price": "8.00",
+      "image": "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg"
+    },
+    {
+      "id": "banana-nanica",
+      "title": "Banana Nanica",
+      "price": "2.20",
+      "image": "https://images.pexels.com/photos/7195346/pexels-photo-7195346.jpeg"
+    },
+    {
+      "id": "mexerica",
+      "title": "Mexerica",
+      "price": "4.00",
+      "image": "https://images.pexels.com/photos/6489818/pexels-photo-6489818.jpeg"
+    },
+    {
+      "id": "morango",
+      "title": "Morango",
+      "price": "5.60",
+      "image": "https://images.pexels.com/photos/4044079/pexels-photo-4044079.jpeg"
+    },
+    {
+      "id": "maracuja",
+      "title": "Maracujá",
+      "price": "4.95",
+      "image": "https://images.pexels.com/photos/4538177/pexels-photo-4538177.jpeg"
+    },
+    {
+      "id": "abacaxi",
+      "title": "Abacaxi",
+      "price": "5.60",
+      "image": "https://images.unsplash.com/photo-1482598614167-ef164f1679b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+    }
+  ],
+  "depositions": [
+    {
+      "id": 1,
+      "name": "Emilly F.",
+      "description": "Um site muito bom, com ele consegui fazer minhas compras de forma rápida sem a necessidade de levantar do sofá.",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Brenda A.",
+      "description": "Um site muito fácil de acessar, com ele realizei minhas compras de forma rápida e simples.",
+      "image": "https://images.unsplash.com/photo-1578489758854-f134a358f08b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Breno D.",
+      "description": "Um site muito confiável, realizei minhas compras sem nenhuma dor de cabeça e me surpreendi com a qualidade.",
+      "image": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+    }
+  ]
+}

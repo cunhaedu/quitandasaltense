@@ -1,0 +1,99 @@
+.bunner {
+  max-width: 100vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(223.81deg, #E2E474 0%, #81E7A8 100%);
+
+  h1 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 4rem;
+  }
+}
+
+.main {
+  margin: 5rem;
+}
+
+.about {
+  h2 {
+    font-size: 2rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    p {
+      max-width: 40vw;
+    }
+
+    img {
+      margin-right: 6rem;
+      width: 10rem;
+    }
+  }
+}
+
+.values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    margin: 5rem auto;
+  }
+
+  ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 10rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 10rem;
+      height: 10rem;
+      text-align: center;
+      color: var(--white);
+    }
+  }
+}
+
+.adaptations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+    margin: 5rem auto 1rem auto;
+  }
+
+  span {
+    font-weight: 300;
+    width: 60%;
+    text-align: center;
+  }
+
+  ul {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   padding: 5rem;
+   list-style-type: none;
+
+   li {
+     margin: auto 5rem;
+   }
+  }
+}
