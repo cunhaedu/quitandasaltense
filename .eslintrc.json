@@ -29,6 +29,7 @@
       "jsx-a11y/control-has-associated-label": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "import/prefer-default-export": "off",
+      "jsx-a11y/label-has-associated-control": "off",
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
       "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],

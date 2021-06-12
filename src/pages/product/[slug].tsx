@@ -22,7 +22,7 @@ export const getStaticPaths: GetStaticPaths = async () => ({
 });
 
 export default function Product({ product }: ProductProps) {
-  const { addProduct } = useCart();
+  const { addProduct, isProductInList } = useCart();
 
   return (
     <main className={styles.main}>
@@ -38,21 +38,24 @@ export default function Product({ product }: ProductProps) {
         <h2>{product.title}</h2>
         <span>{Number(product.price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
 
-        <Link href="/cart">
-          <button
-            type="button"
-            onClick={() => addProduct(product)}
-          >
-            Adicionar ao carrinho
-          </button>
-        </Link>
-
-        {/* <button
-          type="button"
-          onClick={() => addProduct(product)}
-        >
-          Adicionar ao carrinho
-        </button> */}
+        {isProductInList(product.id) ? (
+          <Link href="/cart">
+            <button
+              type="button"
+            >
+              Ver carrinho
+            </button>
+          </Link>
+        ) : (
+          <Link href="/cart">
+            <button
+              type="button"
+              onClick={() => addProduct(product)}
+            >
+              Adicionar ao carrinho
+            </button>
+          </Link>
+        )}
       </div>
     </main>
   );

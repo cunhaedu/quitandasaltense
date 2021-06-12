@@ -17,6 +17,7 @@ type CartContextData = {
   total: number;
   addProduct: (product: Product) => void;
   removeProduct: (index: number, product: Product) => void;
+  isProductInList: (id: string) => boolean;
 }
 
 type CartContextProviderProps = {
@@ -47,12 +48,25 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     }
   }
 
+  function isProductInList(id: string): boolean {
+    let isProductInCart = false;
+
+    productList.forEach(product => {
+      if (product.id === id) {
+        isProductInCart = true;
+      }
+    });
+
+    return isProductInCart;
+  }
+
   return (
     <CartContext.Provider value={{
       total,
       removeProduct,
       addProduct,
       productList,
+      isProductInList,
     }}
     >
       {children}
