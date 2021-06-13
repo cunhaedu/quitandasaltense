@@ -29,7 +29,7 @@
     color: var(--white);
     transition: background-color 1.2s;
     align-self: center;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
 
     &:hover {
       background: var(--green-600);
@@ -55,7 +55,7 @@
   input[type=text],
   input[type=email],
   input[type=number] {
-    background: #F0F0F5;
+    background: var(--gray-100);
     border-radius: 0.5rem;
     border: none;
     padding: 1rem 1.5rem;
@@ -85,5 +85,22 @@
     font-weight: 400;
     font-size: 0.9rem;
     margin-bottom: 0.6rem;
+  }
+}
+
+.fieldCheck {
+  flex-direction: row;
+  align-items: center;
+
+  input[type=radio] {
+    background: #F0F0F5;
+
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+
+  label {
+    margin-left: 0.2rem;
   }
 }

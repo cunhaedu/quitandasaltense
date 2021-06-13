@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Link from 'next/link';
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useCart } from '../../contexts/cartContext';
 import styles from './purchase.module.scss';
@@ -142,7 +143,36 @@ export default function Purchase() {
           </div>
         </div>
 
-        <button type="submit">Finalizar compra</button>
+        <fieldset>
+          <legend>
+            <h2>Método de pagamento</h2>
+          </legend>
+        </fieldset>
+
+        <div className={styles.fieldCheck}>
+          <input type="radio" id="money" name="payment" value="money" />
+          <label htmlFor="money"> Dinheiro</label>
+
+          <input type="radio" id="debt" name="payment" value="debt" />
+          <label htmlFor="debt"> Débito</label>
+
+          <input type="radio" id="credit" name="payment" value="credit" />
+          <label htmlFor="credit"> Crédito</label>
+        </div>
+
+        <fieldset>
+          <legend>
+            <h2>
+              Total da compra:
+              {' '}
+              {total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+            </h2>
+          </legend>
+        </fieldset>
+
+        <Link href="/purchase-success">
+          <button type="button">Finalizar compra</button>
+        </Link>
       </form>
     </div>
   );
