@@ -125,3 +125,34 @@
     }
   }
 }
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin: 2.5rem auto;
+  }
+
+  button {
+    background: var(--green-400);
+    border: none;
+    padding: 1rem;
+    border-radius: 1.3rem;
+    transition: background-color 1.2s;
+    text-align: center;
+
+    text-decoration: none;
+    color: var(--white);
+
+    &:hover {
+      background: var(--green-600);
+    }
+  }
+}
+
+.disable {
+  cursor: not-allowed;
+}

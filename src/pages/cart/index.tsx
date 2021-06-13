@@ -19,23 +19,35 @@ export default function Cart() {
 
       <main className={styles.products}>
 
-        <div className={styles.cartTotal}>
-          <span>
-            Total:
-            {' '}
-            {total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-          </span>
+        {productList.length ? (
+          <div className={styles.cartTotal}>
+            <span>
+              Total:
+              {' '}
+              {total.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+            </span>
 
-          <div>
+            <div>
+              <Link href="/products">
+                <a type="button">Adicionar mais produtos</a>
+              </Link>
+
+              <Link href="/purchase">
+                <button type="button">Prosseguir com a compra</button>
+              </Link>
+            </div>
+          </div>
+        ) : (
+          <div className={styles.emptyCart}>
+            <h2>Opa, parece que o carrinho está vazio!</h2>
             <Link href="/products">
-              <a type="button">Adicionar mais produtos</a>
-            </Link>
-
-            <Link href="/purchase">
-              <button type="button">Prosseguir com a compra</button>
+              <button type="button">
+                Adicionar produtos ao carrinho
+                {' >'}
+              </button>
             </Link>
           </div>
-        </div>
+        )}
 
         <ul>
           {productList.map((product, index) => (
