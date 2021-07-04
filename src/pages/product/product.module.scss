@@ -37,4 +37,15 @@
       }
     }
   }
+
+  @media (max-width: 1280px) {
+    justify-content: center;
+    flex-direction: column;
+
+    div {
+      h2, span {
+        text-align: center;
+      }
+    }
+  }
 }
