@@ -20,6 +20,18 @@
     font-weight: 500;
     font-size: 4rem;
   }
+
+  @media (max-width: 1280px) {
+    height: auto;
+    background: none;
+
+    h1 {
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      color: var(--gray-800);
+    }
+  }
 }
 
 .products {
@@ -40,8 +52,6 @@
     gap: 5rem 10rem;
 
     li {
-      position: relative;
-
       display: flex;
       flex-direction: column;
       align-items: left;
@@ -60,6 +70,24 @@
       &:hover {
         p {
           color: var(--green-400);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1280px) {
+    margin: 10px auto;
+
+    ul {
+      padding: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+
+      li {
+        align-items: center;
+
+        p, span {
+          text-align: center;
         }
       }
     }
@@ -84,7 +112,7 @@
   margin-bottom: 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between  ;
+  justify-content: space-between;
   width: 77%;
 
   span {
@@ -124,6 +152,23 @@
       }
     }
   }
+
+  @media (max-width: 1280px) {
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+
+    span {
+      padding-bottom: 15px;
+    }
+
+    div {
+      a {
+        text-align: center;
+      }
+    }
+  }
 }
 
 .emptyCart {
@@ -134,6 +179,7 @@
 
   h2 {
     margin: 2.5rem auto;
+    text-align: center;
   }
 
   button {

@@ -7,9 +7,11 @@ export function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      <img src="/logo.svg" alt="Quitandasaltense" />
+      <div>
+        <img src="/logo.svg" alt="Quitandasaltense" />
 
-      <p>Quitanda Saltense</p>
+        <p>Quitanda Saltense</p>
+      </div>
 
       <menu>
         <ul>
@@ -33,9 +35,12 @@ export function Header() {
               <a className={router.pathname === '/contact' && styles.active}>Contato</a>
             </Link>
           </li>
-          <li>
+          <li className={styles.cart}>
             <Link href="/cart">
-              <a className={router.pathname === '/cart' && styles.active}>Carrinho</a>
+              <a className={router.pathname === '/contact' && styles.active}>
+                <p>Contato</p>
+                <img src="/buy.svg" alt="carrinho" />
+              </a>
             </Link>
           </li>
         </ul>
