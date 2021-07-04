@@ -37,8 +37,8 @@ export function Header() {
           </li>
           <li className={styles.cart}>
             <Link href="/cart">
-              <a className={router.pathname === '/contact' && styles.active}>
-                <p>Contato</p>
+              <a className={router.pathname === '/cart' && styles.active}>
+                <p>Carrinho</p>
                 <img src="/buy.svg" alt="carrinho" />
               </a>
             </Link>
