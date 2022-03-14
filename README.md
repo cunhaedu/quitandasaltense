@@ -2,9 +2,11 @@
 
 > An Eccommerce website develop with nextjs to a IFSP project
 
+This project aims to solve a problem of a green grocery store that, with the advent of COVID-19, saw the sales drop and decide to sell its products online
+
 ![quitandasaltense](.github/website.png)
 
-## :construction_worker: Install
+## :construction_worker: Get started
 
 **Clone this project to your computer:**
 
